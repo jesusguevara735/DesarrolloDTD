@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Informe [
+        <!ELEMENT Informe (cabecera|contenido)*>
+        <!ELEMENT cabecera (title|descripcion|fecha)*>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ATTLIST fecha date CDATA #REQUIRED>
+        <!ELEMENT contenido (region)*>
+        <!ELEMENT region (norte|centro|sur)*>
+        <!ELEMENT norte (trimestre)*>
+        <!ELEMENT trimestre (uno|dos|tres|cuatro)*>
+        <!ELEMENT uno (librosvendidos)*>
+        <!ELEMENT librosvendidos (#PCDATA)>
+        <!ELEMENT dos (librosvendidos)*>
+        <!ELEMENT tres (librosvendidos)*>
+        <!ELEMENT cuatro (librosvendidos)*>
+        <!ELEMENT centro (trimestre)*>
+        <!ELEMENT sur (trimestre)*>
+        ]>
+<Informe>
+    <cabecera>
+        <title>
+            Ediciones Aranda
+            Informe regional de ventas
+        </title>
+        <descripcion>
+            informe de ventas para las regiones norte, centro y sur.
+        </descripcion>
+        <fecha date="2021-09-30">
+            date:2021-09-30
+        </fecha>
+    </cabecera>
+    <contenido>
+        <region>
+            <norte>
+                <trimestre>
+                    <uno>
+                        <librosvendidos>
+                            24000
+                        </librosvendidos>
+                    </uno>
+                    <dos>
+                        <librosvendidos>
+                            38600
+                        </librosvendidos>
+                    </dos>
+                    <tres>
+                        <librosvendidos>
+                            NO_INFO
+                        </librosvendidos>
+                    </tres>
+                    <cuatro>
+                        <librosvendidos>
+                            NO_INFO
+                        </librosvendidos>
+                    </cuatro>
+                </trimestre>
+            </norte>
+            <centro>
+                <trimestre>
+                    <uno>
+                        <librosvendidos>
+                            NO_INFO
+                        </librosvendidos>
+                    </uno>
+                    <dos>
+                        <librosvendidos>
+                            16080
+                        </librosvendidos>
+                    </dos>
+                    <tres>
+                        <librosvendidos>
+                            25000
+                        </librosvendidos>
+                    </tres>
+                    <cuatro>
+                        <librosvendidos>
+                            29000
+                        </librosvendidos>
+                    </cuatro>
+                </trimestre>
+            </centro>
+            <sur>
+                <trimestre>
+                    <uno>
+                        <librosvendidos>
+                            27000
+                        </librosvendidos>
+                    </uno>
+                    <dos>
+                        <librosvendidos>
+                            31400
+                        </librosvendidos>
+                    </dos>
+                    <tres>
+                        <librosvendidos>
+                            40100
+                        </librosvendidos>
+                    </tres>
+                    <cuatro>
+                        <librosvendidos>
+                            30000
+                        </librosvendidos>
+                    </cuatro>
+                </trimestre>
+            </sur>
+        </region>
+    </contenido>
+</Informe>

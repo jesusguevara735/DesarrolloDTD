@@ -1,0 +1,17 @@
+<!ELEMENT liga (copadelmundo)*>
+        <!ELEMENT copadelmundo (partidos)*>
+        <!ELEMENT partidos (juego)*>
+        <!ELEMENT juego (fecha,equipos,resultado,estadisticas)*>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT equipos (#PCDATA)>
+        <!ELEMENT resultado (#PCDATA)>
+        <!ELEMENT estadisticas (equipo1|equipo2)*>
+        <!ELEMENT equipo1 (nombre,faltas,tarjetasamarillas,tarjetasrojas,fueradelugar,tirosdeesquina,salvadas)*>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT faltas (#PCDATA)>
+        <!ELEMENT tarjetasamarillas (#PCDATA)>
+        <!ELEMENT tarjetasrojas (#PCDATA)>
+        <!ELEMENT fueradelugar (#PCDATA)>
+        <!ELEMENT tirosdeesquina (#PCDATA)>
+        <!ELEMENT salvadas (#PCDATA)>
+        <!ELEMENT equipo2 (nombre,faltas,tarjetasamarillas,tarjetasrojas,fueradelugar,tirosdeesquina,salvadas)*>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga [
+        <!ELEMENT liga (copadelmundo)*>
+        <!ELEMENT copadelmundo (partidos)*>
+        <!ELEMENT partidos (juego)*>
+        <!ELEMENT juego (fecha,equipos,resultado,estadisticas)*>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT equipos (#PCDATA)>
+        <!ELEMENT resultado (#PCDATA)>
+        <!ELEMENT estadisticas (equipo1|equipo2)*>
+        <!ELEMENT equipo1 (nombre,faltas,tarjetasamarillas,tarjetasrojas,fueradelugar,tirosdeesquina,salvadas)*>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT faltas (#PCDATA)>
+        <!ELEMENT tarjetasamarillas (#PCDATA)>
+        <!ELEMENT tarjetasrojas (#PCDATA)>
+        <!ELEMENT fueradelugar (#PCDATA)>
+        <!ELEMENT tirosdeesquina (#PCDATA)>
+        <!ELEMENT salvadas (#PCDATA)>
+        <!ELEMENT equipo2 (nombre,faltas,tarjetasamarillas,tarjetasrojas,fueradelugar,tirosdeesquina,salvadas)*>
+        ]>
+<liga>
+    <copadelmundo>
+        <partidos>
+            <juego>
+                <fecha>2022-12-04</fecha>
+                <equipos>Francia vs Japon</equipos>
+                <resultado> 3-1 </resultado>
+                <estadisticas>
+                    <equipo1>
+                        <nombre>Francia</nombre>
+                        <faltas>10</faltas>
+                        <tarjetasamarillas>1</tarjetasamarillas>
+                        <tarjetasrojas>0</tarjetasrojas>
+                        <fueradelugar>3</fueradelugar>
+                        <tirosdeesquina>7</tirosdeesquina>
+                        <salvadas>1</salvadas>
+                    </equipo1>
+                    <equipo2>
+                        <nombre>Japon</nombre>
+                        <faltas>8</faltas>
+                        <tarjetasamarillas>2</tarjetasamarillas>
+                        <tarjetasrojas>0</tarjetasrojas>
+                        <fueradelugar>1</fueradelugar>
+                        <tirosdeesquina>1</tirosdeesquina>
+                        <salvadas>5</salvadas>
+                    </equipo2>
+                </estadisticas>
+            </juego>
+            <juego>
+                <fecha>2022-12-04</fecha>
+                <equipos>Inglaterra vs Senegal</equipos>
+                <resultado> 3-0 </resultado>
+                <estadisticas>
+                    <equipo1>
+                        <nombre>inglaterra</nombre>
+                        <faltas>16</faltas>
+                        <tarjetasamarillas>0</tarjetasamarillas>
+                        <tarjetasrojas>0</tarjetasrojas>
+                        <fueradelugar>0</fueradelugar>
+                        <tirosdeesquina>3</tirosdeesquina>
+                        <salvadas>1</salvadas>
+                    </equipo1>
+                    <equipo2>
+                        <nombre>Senegal</nombre>
+                        <faltas>12</faltas>
+                        <tarjetasamarillas>1</tarjetasamarillas>
+                        <tarjetasrojas>0</tarjetasrojas>
+                        <fueradelugar>3</fueradelugar>
+                        <tirosdeesquina>0</tirosdeesquina>
+                        <salvadas>1</salvadas>
+                    </equipo2>
+                </estadisticas>
+            </juego>
+            <juego>
+                <fecha>2022-11-26</fecha>
+                <equipos>Mexico vs Argentina</equipos>
+                <resultado> 0-2 </resultado>
+                <estadisticas>
+                    <equipo1>
+                        <nombre>Mexico</nombre>
+                        <faltas>14</faltas>
+                        <tarjetasamarillas>3</tarjetasamarillas>
+                        <tarjetasrojas>0</tarjetasrojas>
+                        <fueradelugar>4</fueradelugar>
+                        <tirosdeesquina>2</tirosdeesquina>
+                        <salvadas>4</salvadas>
+                    </equipo1>
+                    <equipo2>
+                        <nombre>Argentina</nombre>
+                        <faltas>10</faltas>
+                        <tarjetasamarillas>3</tarjetasamarillas>
+                        <tarjetasrojas>0</tarjetasrojas>
+                        <fueradelugar>2</fueradelugar>
+                        <tirosdeesquina>4</tirosdeesquina>
+                        <salvadas>2</salvadas>
+                    </equipo2>
+                </estadisticas>
+            </juego>
+        </partidos>
+    </copadelmundo>
+</liga>

@@ -1,0 +1,17 @@
+<!ELEMENT Informe (cabecera|contenido)*>
+        <!ELEMENT cabecera (title|descripcion|fecha)*>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ATTLIST fecha date CDATA #REQUIRED>
+        <!ELEMENT contenido (region)*>
+        <!ELEMENT region (norte|centro|sur)*>
+        <!ELEMENT norte (trimestre)*>
+        <!ELEMENT trimestre (uno|dos|tres|cuatro)*>
+        <!ELEMENT uno (librosvendidos)*>
+        <!ELEMENT librosvendidos (#PCDATA)>
+        <!ELEMENT dos (librosvendidos)*>
+        <!ELEMENT tres (librosvendidos)*>
+        <!ELEMENT cuatro (librosvendidos)*>
+        <!ELEMENT centro (trimestre)*>
+        <!ELEMENT sur (trimestre)*>
